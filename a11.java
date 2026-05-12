@@ -49,8 +49,7 @@ public class a11 {
                 case 2 -> {
                     System.out.println("Codigo: ");
                     String clave2 = sc.nextLine();
-                    if (inventario.containsKey(clave2)) {
-                        inventario.remove(clave2);
+                    if (inventario.remove(clave2) != null) {
                         System.out.println("El producto ha sido dado de baja");
                     } else {
                         System.out.println("El codigo de producto no existe introduce uno valido");
