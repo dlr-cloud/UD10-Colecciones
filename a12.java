@@ -8,7 +8,7 @@ import java.util.*;
 public class a12 {
 
     public static void main(String[] args) {
-        List<Integer> premios = new ArrayList<>(List.of(1000, 50, 500, 50, 200));
+        List<Integer> premios = new ArrayList<>(Arrays.asList(1000, 50, 500, 50, 200));
         int Cantidad = Collections.frequency(premios, 50);
         System.out.println("Hay un total de: "+ Cantidad + " premios de 50");
         System.out.println("La cantidad maxima de premios es: " + Collections.max(premios) + " \ny la cantidad minima de premio es: "+ Collections.min(premios));
